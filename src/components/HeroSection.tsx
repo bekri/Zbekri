@@ -69,8 +69,8 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Quick Access Buttons */}
-      <div className="container absolute bottom-10 left-0 right-0 z-10">
+      {/* Quick Access Buttons - Moved down by adding mt-24 (margin-top) */}
+      <div className="container absolute bottom-10 left-0 right-0 z-10 mt-24">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-4">
           <Link to="/graphic-design" className="futuristic-card aspect-square flex flex-col items-center justify-center hover:bg-futuristic-blue/5 hover:scale-105 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-futuristic-blue mb-3"><path d="M8.7 4H4a2 2 0 0 0-2 2v4.7" /><path d="M20 11.5V7a2 2 0 0 0-2-2h-1.5" /><path d="M4 20h4.7" /><path d="M15.3 20H20a2 2 0 0 0 2-2v-4.7" /><circle cx="12" cy="12" r="3" /><path d="M16.5 7.5v0" /><path d="M7.5 7.5v0" /><path d="M7.5 16.5v0" /><path d="M16.5 16.5v0" /></svg>
