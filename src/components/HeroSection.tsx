@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-between pb-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-hero-gradient z-0"></div>
       <div className="absolute inset-0 grid-bg opacity-10 z-0"></div>
       
       {/* Main Content */}
-      <div className="container relative z-10 mt-20">
+      <div className="container relative z-10 mt-20 flex-grow">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="space-y-6">
@@ -69,8 +69,8 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Quick Access Buttons - Moved down by adding mt-24 (margin-top) */}
-      <div className="container absolute bottom-10 left-0 right-0 z-10 mt-24">
+      {/* Quick Access Buttons - Now moved below introduction content */}
+      <div className="container relative z-10 mt-16 mb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-4">
           <Link to="/graphic-design" className="futuristic-card aspect-square flex flex-col items-center justify-center hover:bg-futuristic-blue/5 hover:scale-105 transition-all duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-futuristic-blue mb-3"><path d="M8.7 4H4a2 2 0 0 0-2 2v4.7" /><path d="M20 11.5V7a2 2 0 0 0-2-2h-1.5" /><path d="M4 20h4.7" /><path d="M15.3 20H20a2 2 0 0 0 2-2v-4.7" /><circle cx="12" cy="12" r="3" /><path d="M16.5 7.5v0" /><path d="M7.5 7.5v0" /><path d="M7.5 16.5v0" /><path d="M16.5 16.5v0" /></svg>
