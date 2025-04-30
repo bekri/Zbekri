@@ -16,10 +16,13 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="space-y-6">
-              <div className="flex flex-wrap gap-3 mb-4">
-                <span className="text-sm py-1 px-3 rounded-full border border-futuristic-blue/20 bg-futuristic-blue/5 text-futuristic-blue">EN</span>
-                <span className="text-sm py-1 px-3 rounded-full border border-futuristic-purple/20 bg-futuristic-purple/5 text-futuristic-purple">FR</span>
-                <span className="text-sm py-1 px-3 rounded-full border border-futuristic-neon/20 bg-futuristic-neon/5 text-futuristic-neon">AR</span>
+              <div className="mb-4">
+                <p className="text-sm text-muted-foreground mb-2">Languages I speak:</p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-blue/20 bg-futuristic-blue/5 text-futuristic-blue">EN</span>
+                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-purple/20 bg-futuristic-purple/5 text-futuristic-purple">FR</span>
+                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-neon/20 bg-futuristic-neon/5 text-futuristic-neon">AR</span>
+                </div>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
