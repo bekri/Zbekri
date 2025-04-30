@@ -15,16 +15,7 @@ const HeroSection = () => {
       <div className="container relative z-10 mt-20 flex-grow">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="space-y-6">
-              <div className="mb-4">
-                <p className="text-sm text-muted-foreground mb-2">Languages I speak:</p>
-                <div className="flex flex-wrap gap-3">
-                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-blue/20 bg-futuristic-blue/5 text-futuristic-blue">EN</span>
-                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-purple/20 bg-futuristic-purple/5 text-futuristic-purple">FR</span>
-                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-neon/20 bg-futuristic-neon/5 text-futuristic-neon">AR</span>
-                </div>
-              </div>
-              
+            <div className="space-y-6">              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="block">Hi, I'm</span>
                 <span className="text-futuristic-blue animate-glow">Zakariae Bekri</span>
@@ -37,6 +28,15 @@ const HeroSection = () => {
               <p className="text-lg italic text-muted-foreground border-l-4 border-futuristic-blue/30 pl-4">
                 "Bridging imagination and technology to create solutions that inspire."
               </p>
+              
+              <div className="mb-4">
+                <p className="text-sm text-muted-foreground mb-2">Languages I speak:</p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-blue/20 bg-futuristic-blue/5 text-futuristic-blue">EN</span>
+                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-purple/20 bg-futuristic-purple/5 text-futuristic-purple">FR</span>
+                  <span className="text-sm py-1 px-3 rounded-full border border-futuristic-neon/20 bg-futuristic-neon/5 text-futuristic-neon">AR</span>
+                </div>
+              </div>
               
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button asChild className="bg-futuristic-blue hover:bg-futuristic-blue/80 font-medium text-white">
