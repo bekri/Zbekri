@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				orbitron: ['Orbitron', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +66,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				futuristic: {
+					blue: '#1EAEDB',
+					purple: '#9b87f5',
+					darkPurple: '#1A1F2C',
+					neon: '#D946EF',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,25 +81,37 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'glow': {
+					'0%, 100%': { 
+						textShadow: '0 0 5px rgba(30, 174, 219, 0.3), 0 0 15px rgba(30, 174, 219, 0.3), 0 0 20px rgba(30, 174, 219, 0.3)',
+						boxShadow: '0 0 5px rgba(30, 174, 219, 0.3), 0 0 15px rgba(30, 174, 219, 0.3)'
 					},
-					to: {
-						height: '0'
+					'50%': { 
+						textShadow: '0 0 10px rgba(30, 174, 219, 0.6), 0 0 30px rgba(30, 174, 219, 0.6), 0 0 40px rgba(30, 174, 219, 0.6)',
+						boxShadow: '0 0 10px rgba(30, 174, 219, 0.6), 0 0 30px rgba(30, 174, 219, 0.6)'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 3s ease-in-out infinite',
+				'float': 'float 4s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'grid-pattern': 'linear-gradient(rgba(30, 174, 219, 0.05) 1px, transparent 1px), linear-gradient(to right, rgba(30, 174, 219, 0.05) 1px, transparent 1px)',
+				'hero-gradient': 'radial-gradient(circle at top right, rgba(155, 135, 245, 0.1), transparent 70%), radial-gradient(circle at bottom left, rgba(30, 174, 219, 0.1), transparent 70%)'
 			}
 		}
 	},
